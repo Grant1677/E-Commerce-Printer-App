@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.PrinterViewPage"
+    Title="Printer"
+    BackgroundColor="#F0F2EF">
+
+    <ContentPage.ToolbarItems>
+		<ToolbarItem IconImageSource = "shopping_cart.png"
+					 Clicked="ViewCart"/>
+
+	</ContentPage.ToolbarItems>
+
+    <ContentPage.Content >
+        <StackLayout VerticalOptions="StartAndExpand">
+
+			<Image Source="https://1.bp.blogspot.com/-2bVBEjh-pss/WkvMSASnVhI/AAAAAAAAAMU/sYvTLJxwbYULPzc9U-RtpAVlcMlzoJetgCLcBGAs/s1600/laser-printer.png"
+				   HeightRequest="300"
+                    WidthRequest="300"
+                    Margin="20"/>
+
+            <Grid Padding="7"
+				    RowDefinitions="Auto, *"
+				    ColumnDefinitions="Auto, *">
+
+                <Label Grid.Row=" 0"
+                       Grid.Column="0"
+                       x:Name="PrinterHeaderInfo"
+                       FontAttributes="Bold"
+                       FontSize="Title"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 1"
+                       Grid.Column="0"
+                       x:Name="PrinterPrice"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 2"
+                       Grid.Column="0"
+                       x:Name="PrinterQuantity"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 3"
+                       Grid.RowSpan="3"
+                       Grid.Column="0"
+                       x:Name="PrinterDescription"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+            <!--<Label Grid.Row=" 4"
+                       Grid.Column="0"
+                x:Name="PrinterIsColor"
+                   FontSize="17"
+                   TextColor="Black"/>-->
+            
+            <Button x:Name="myButton"
+                Grid.Row=" 6"
+                    Grid.Column="0"
+                    Grid.RowSpan="3"
+                    Text="Add To Cart"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					Margin="10,5,10,5"
+					TextColor="#F0F2EF"
+					HorizontalOptions="Center"
+					WidthRequest="350"
+					HeightRequest="70"
+					FontSize="30"
+                    />
+
+            </Grid>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

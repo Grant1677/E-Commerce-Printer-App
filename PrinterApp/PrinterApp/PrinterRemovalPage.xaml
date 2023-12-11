@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.PrinterRemovalPage"
+    Title="Printer Removal"
+	BackgroundColor="#F0F2EF">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="manNameEntry"
+					Margin="15,5,15,5"
+					Placeholder="Enter a Manufacturer Name" />
+
+            <Entry x:Name="modelNumEntry"
+					Margin="15,5,15,5"
+					Placeholder="Enter a Model Num" />
+
+            <Button Text="Confirm Removal"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#AFD5AA"
+					Margin="10,0,10,5"
+					TextColor="Black"
+					HorizontalOptions="Center"
+					WidthRequest="200"
+		   			Clicked="ConfirmRemoval"/>
+
+			<Button Text="Cancel"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#AFD5AA"
+					Margin="10,0,10,5"
+					TextColor="Black"
+					HorizontalOptions="Center"
+					WidthRequest="200"
+		   			Clicked="CancelAction"/>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.OrderHistory"
+    Title="Order History">
+    <ContentPage.Content>
+		<ScrollView>
+        <StackLayout>
+            <CollectionView x:Name = "orderCollectionView"
+									SelectionMode="Single"
+							SelectionChanged="orderCollectionView_SelectionChanged">
+
+				<CollectionView.ItemTemplate>
+					<DataTemplate>
+						<StackLayout>
+						<Grid Padding="7"
+								RowDefinitions="Auto, *"
+								ColumnDefinitions="Auto, *"
+								>
+
+							<Label Grid.Row="0"
+									TextColor="Black"
+									Text= "{Binding OrderID, StringFormat='Order ID:           {0}'}"/>
+
+							<Label Grid.Row="1"
+									TextColor="Black"
+									Text= "{Binding UserID, StringFormat='User ID:             {0}'}"/>
+
+							<Label Grid.Row="2"
+									TextColor="Black"
+									Text= "{Binding Date, StringFormat='Date Ordered: {0}'}"/>
+
+							<Label Grid.Row="3"
+									TextColor="Black"
+									Text= "{Binding TotalCost, StringFormat='Total Cost:       ${0}'}"/>
+							
+
+							
+
+                        </Grid>
+							<BoxView HeightRequest="1"
+								CornerRadius="25"
+								Color="Black"
+								Grid.Row="4"
+							/>
+
+
+						</StackLayout>
+					</DataTemplate>
+				</CollectionView.ItemTemplate>
+			</CollectionView>
+			<!--<Button 
+							Text="Clear"
+							FontAttributes="Bold"
+							CornerRadius="25"
+							BackgroundColor="#30638E"
+							Margin="10,5,10,5"
+							TextColor="#F0F2EF"
+							HorizontalOptions="Center"
+							WidthRequest="280"
+							HeightRequest="50"
+							FontSize="20"
+							Clicked="ClearData"/>-->
+        </StackLayout>
+			</ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,199 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrinterApp.RegisterPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#C2F1FE">
+
+    <ContentPage.Content>
+        <Grid
+			HorizontalOptions="FillAndExpand"
+			VerticalOptions="FillAndExpand" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Frame CornerRadius="25"
+					   Margin="15"
+					   Padding="0"
+					   HorizontalOptions="CenterAndExpand"
+					   VerticalOptions="Center"
+					   IsClippedToBounds="True"
+					   HeightRequest="200"
+					   WidthRequest="200">
+					<Image
+					   VerticalOptions="FillAndExpand"
+					   HorizontalOptions="FillAndExpand"
+					   Source="PrinterInnovationLogo.png"
+					   Aspect="AspectFit">
+					</Image>
+
+				</Frame>
+
+            <Frame Grid.Row="1"
+				   BackgroundColor="#F0F2EF"
+				   Margin="0,0,0,-40"
+				   BorderColor="#30638E"
+				   HasShadow="True"
+				   CornerRadius="50"
+				   HeightRequest="700">
+
+                <Grid
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="FillAndExpand"
+					RowSpacing="10"
+					Padding="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0"
+						   Text="Create An Account"
+						   FontSize="24"
+						   FontAttributes="Bold"
+						   TextColor="#30638E"
+						   HorizontalOptions="CenterAndExpand">
+					</Label>
+
+					<Frame	Grid.Row="1"
+							BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="15,0,15,0"
+							Padding="0"
+							CornerRadius="50">
+
+						<Frame BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="1"
+							Padding="20,0,20,0"
+							HeightRequest="60"
+							CornerRadius="50">
+
+							<Entry x:Name="emailEntry"
+									Margin="5"
+									Placeholder="Email"/>
+						</Frame>
+					</Frame>
+
+					<Frame	Grid.Row="2"
+							BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="15,0,15,0"
+							Padding="0"
+							CornerRadius="50">
+
+						<Frame BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="1"
+							Padding="20,0,20,0"
+							HeightRequest="60"
+							CornerRadius="50">
+
+							<Entry x:Name="passwordEntry"
+									Margin="5"
+									Placeholder="Password"
+									IsPassword="true"/>
+						</Frame>
+					</Frame>
+
+					<Frame	Grid.Row="3"
+							BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="15,0,15,0"
+							Padding="0"
+							CornerRadius="50">
+
+						<Frame BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="1"
+							Padding="20,0,20,0"
+							HeightRequest="60"
+							CornerRadius="50">
+
+							<Entry x:Name="usernameEntry"
+									Margin="5"
+									Placeholder="Username"/>
+						</Frame>
+					</Frame>
+
+					<Frame Grid.Row="4" 
+							BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="15,0,15,0"
+							Padding="0"
+							CornerRadius="50">
+
+						<Frame BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="1"
+							Padding="20,0,20,0"
+							HeightRequest="60"
+							CornerRadius="50">
+
+							<Entry x:Name="firstnameEntry"
+									Placeholder="First Name" />
+						</Frame>
+					</Frame>
+
+					<Frame	Grid.Row="5" 
+							BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="15,0,15,0"
+							Padding="0"
+							CornerRadius="50">
+
+						<Frame BorderColor = "Black"
+							BackgroundColor="Transparent"
+							Margin="1"
+							Padding="20,0,20,0"
+							HeightRequest="60"
+							CornerRadius="50">
+
+							<Entry x:Name="lastnameEntry"
+									Margin="5"
+									Placeholder="Last Name"/>
+						</Frame>
+					</Frame>
+
+
+					<Button Grid.Row="6"
+							Text="Register account"
+							FontAttributes="Bold"
+							CornerRadius="25"
+							BackgroundColor="#30638E"
+							Margin="10,5,10,5"
+							TextColor="#F0F2EF"
+							HorizontalOptions="Center"
+							WidthRequest="280"
+							HeightRequest="50"
+							FontSize="20"
+							Clicked="OnRegisterAccountButtonClicked"/>
+
+					<Button Grid.Row="7"
+							Text="Back to login screen"
+							FontAttributes="Bold"
+							CornerRadius="25"
+							BackgroundColor="#30638E"
+							Margin="10,5,10,5"
+							TextColor="#F0F2EF"
+							HorizontalOptions="Center"
+							WidthRequest="280"
+							HeightRequest="50"
+							FontSize="20"
+							Clicked="BackToLogin"/>
+
+					
+					
+                 </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

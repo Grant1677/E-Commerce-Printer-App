@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.AdminPage"
+	NavigationPage.HasBackButton="False"
+    Title="Admin Tools"
+	BackgroundColor="#F0F2EF">
+
+    <ContentPage.Content>
+
+		<StackLayout>
+
+			<Frame	CornerRadius="25"
+					Margin="15"
+					Padding="0"
+					HorizontalOptions="CenterAndExpand"
+					VerticalOptions="Center"
+					IsClippedToBounds="True"
+					HeightRequest="350"
+					WidthRequest="350">
+
+					<Image
+					   VerticalOptions="FillAndExpand"
+					   HorizontalOptions="FillAndExpand"
+					   Source="PrinterInnovationLogo.png"
+					   Aspect="AspectFit">
+					</Image>
+
+			</Frame>
+
+            <Button Text="Printer Menu"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					Margin="10,5,10,5"
+					TextColor="#F0F2EF"
+					HorizontalOptions="Center"
+					WidthRequest="350"
+					HeightRequest="70"
+					FontSize="30"
+		   			Clicked="OnPrinterMenuButtonClicked"/>
+
+			<Button Text="User Menu"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					Margin="10,5,10,5"
+					TextColor="#F0F2EF"
+					HorizontalOptions="Center"
+					WidthRequest="350"
+					HeightRequest="70"
+					FontSize="30"
+		   			Clicked="OnUserMenuButtonClicked"/>
+
+			<Button Text="View Past Orders"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					Margin="10,5,10,5"
+					TextColor="#F0F2EF"
+					HorizontalOptions="Center"
+					WidthRequest="350"
+					HeightRequest="70"
+					FontSize="30"
+		   			Clicked="ViewPastOrdersButton"/>
+
+			<Button Text="Logout"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					Margin="10,5,10,5"
+					TextColor="#F0F2EF"
+					HorizontalOptions="Center"
+					WidthRequest="350"
+					HeightRequest="70"
+					FontSize="30"
+		   			Clicked="LogoutOfAdmin"/>
+
+		</StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
+

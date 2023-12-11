@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.OrderDetailsPage"
+    Title="Order Details">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+
+            <Grid Padding="7"
+				    RowDefinitions="Auto, *"
+				    ColumnDefinitions="Auto, *">
+
+                <Label Grid.Row=" 0"
+                       Grid.Column="0"
+                       x:Name="OrderDetails"
+                       Text="Order Details:"
+                       FontAttributes="Bold"
+                       FontSize="Title"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 1"
+                       Grid.Column="0"
+                       x:Name="UserID"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 2"
+                       Grid.Column="0"
+                       x:Name="Name"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 3"
+                       Grid.Column="0"
+                       x:Name="OrderAddress"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 4"
+                       Grid.Column="0"
+                       x:Name="ZipCode"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 5"
+                       Grid.Column="0"
+                       x:Name="PhoneNumber"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 6"
+                       Grid.Column="0"
+                       x:Name="DateOrdered"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 7"
+                       Grid.Column="0"
+                       x:Name="CreditCartNumber"
+                       FontSize="17"
+                       TextColor="Black"/>
+
+                <Label Grid.Row=" 8"
+                       Grid.Column="0"
+                       x:Name="TotalCost"
+                       FontSize="17"
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
+            </Grid>
+
+            <Label 
+                       
+                Text="Items Ordered: "
+                FontAttributes="Bold"
+                FontSize="Title"
+                TextColor="Black"/>
+
+            <CollectionView x:Name = "orderItemCollectionView"
+									SelectionMode="Single">
+
+							<CollectionView.ItemTemplate>
+								<DataTemplate>
+									<Grid Padding="7"
+											RowDefinitions="Auto, *"
+											ColumnDefinitions="Auto, *">
+
+                                    <Label  Grid.Row="0"
+												Grid.Column="1"
+												Grid.ColumnSpan="3"
+												TextColor="Black"
+												FontAttributes="Bold">
+											<Label.Text>
+												<MultiBinding StringFormat="{} {0} - {1} ({2}):   ${3}">
+													<Binding Path="ManName" />
+													<Binding Path="ModelNum"/>
+													<Binding Path="Category"/>
+                                                    <Binding Path="Price"/>
+
+												</MultiBinding>
+											</Label.Text>
+										</Label>
+                                             
+
+										
+									</Grid>
+								</DataTemplate>
+							</CollectionView.ItemTemplate>
+						</CollectionView>
+
+
+           
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+

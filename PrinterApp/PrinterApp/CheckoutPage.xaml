@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.CheckoutPage"
+    Title="Checkout">
+
+    <ContentPage.Content>
+
+		<StackLayout>
+
+			<Frame BackgroundColor="#F0F2EF"
+					   Margin="10,16,10,8"
+					   BorderColor="#30638E"
+					   HasShadow="True"
+					   CornerRadius="50"
+					   HeightRequest="550">
+
+				<StackLayout>
+
+					<Grid RowDefinitions="Auto, *"
+						  ColumnDefinitions="Auto, *"
+						  Padding="0">
+
+						<Frame	Grid.Row="1"
+								Grid.ColumnSpan="2"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="firstNameEntry"
+										Margin="5"
+										Placeholder="First Name"/>
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="2"
+								Grid.ColumnSpan="2"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame  BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="lastNameEntry"
+										Margin="5"
+										Placeholder="Last Name"
+										/>
+							</Frame>
+
+						</Frame>
+
+
+						<Frame	Grid.Row="3"
+								Grid.ColumnSpan="2"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="phoneNumEntry"
+										Margin="5"
+										Placeholder="Phone Number"/>
+
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="4"
+								Grid.ColumnSpan="2"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="addressEntry"
+										Margin="5"
+										Placeholder="Address"/>
+
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="5"
+								Grid.ColumnSpan="2"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="cityEntry"
+										Margin="5"
+										Placeholder="City"/>
+
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="6"
+								Grid.Column="0"
+								HorizontalOptions="StartAndExpand"
+								WidthRequest="155"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="stateEntry"
+										Margin="5"
+										Placeholder="State"/>
+
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="6"
+								Grid.Column="1"
+								HorizontalOptions="EndAndExpand"
+								WidthRequest="155"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="1"
+								Padding="20,0,20,0"
+								HeightRequest="60"
+								CornerRadius="50">
+
+								<Entry x:Name="zipCodeEntry"
+										Margin="5"
+										Placeholder="Zip Code"/>
+
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="7"
+								Grid.ColumnSpan="2"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="cardNumEntry"
+										Margin="5"
+										Placeholder="Card Number: **** **** **** ****"/>
+
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="8"
+								Grid.Column="0"
+								HorizontalOptions="StartAndExpand"
+								WidthRequest="155"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="expDateEntry"
+										Margin="5"
+										Placeholder="Exp: M/Y" />
+
+							</Frame>
+
+						</Frame>
+
+						<Frame	Grid.Row="8"
+								Grid.Column="1"
+								HorizontalOptions="EndAndExpand"
+								WidthRequest="155"
+								BorderColor = "Black"
+								BackgroundColor="Transparent"
+								Margin="5,0,5,0"
+								Padding="0"
+								CornerRadius="50">
+
+							<Frame	BorderColor = "Black"
+									BackgroundColor="Transparent"
+									Margin="1"
+									Padding="20,0,20,0"
+									HeightRequest="60"
+									CornerRadius="50">
+
+								<Entry x:Name="threeDigitCodeEntry"
+										Margin="5"
+										Placeholder="CVV: ***"/>
+
+							</Frame>
+
+						</Frame>
+
+					</Grid>
+
+				</StackLayout>
+
+			</Frame>
+
+			<Frame BackgroundColor="#F0F2EF"
+					   Margin="10,10,10,0"
+					   BorderColor="#30638E"
+					   HasShadow="True"
+					   CornerRadius="50"
+					   HeightRequest="60">
+
+				<StackLayout>
+
+					<Grid RowDefinitions="Auto, *"
+						  ColumnDefinitions="Auto, *"
+						  Padding="0,0,0,0">
+
+						<Label Grid.Row="0"
+								x:Name="orderTotal"
+								TextColor="Black"
+								HorizontalOptions="Start"
+								VerticalOptions="Center"
+								TextTransform="Uppercase"
+								FontAttributes="Bold"
+								FontSize="19"
+								Padding="10"/>
+
+						<Button Grid.Row="0"
+								Grid.Column="1"
+								Text="Confirm and Pay"
+								FontAttributes="Bold"
+								CornerRadius="25"
+								BackgroundColor="#30638E"
+								Margin="10,5,10,5"
+								TextColor="#F0F2EF"
+								HorizontalOptions="End"
+								WidthRequest="170"
+								HeightRequest="50"
+								FontSize="15"
+								Clicked="ConfirmAndPay"/>
+
+					</Grid>
+
+				</StackLayout>
+
+			</Frame>
+
+		</StackLayout>		
+			
+    </ContentPage.Content>
+
+</ContentPage>

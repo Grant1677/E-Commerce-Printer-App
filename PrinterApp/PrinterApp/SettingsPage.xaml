@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.SettingsPage"
+	BackgroundColor="#F0F2EF"
+    Title="Settings">
+    <ContentPage.Content>
+        <StackLayout>
+
+			<Frame CornerRadius="25"
+					   Margin="15"
+					   Padding="0"
+					   HorizontalOptions="CenterAndExpand"
+					   VerticalOptions="Center"
+					   IsClippedToBounds="True"
+					   HeightRequest="350"
+					   WidthRequest="350">
+					<Image
+					   VerticalOptions="FillAndExpand"
+					   HorizontalOptions="FillAndExpand"
+					   Source="PrinterInnovationLogo.png"
+					   Aspect="AspectFit">
+					</Image>
+				</Frame>
+
+			<Button Text="Change Info"
+					FontAttributes="Bold"
+					FontSize="20"
+					Margin="0,0,0,5"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					TextColor="#F0F2EF"
+					HorizontalOptions="CenterAndExpand"
+					WidthRequest="200"/>
+
+			<Button Text="Order History"
+					FontAttributes="Bold"
+					FontSize="20"
+					Margin="0,0,0,5"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					TextColor="#F0F2EF"
+					HorizontalOptions="CenterAndExpand"
+					WidthRequest="200"/>
+
+			<Button Text="Contact Us"
+					FontAttributes="Bold"
+					FontSize="20"
+					Margin="0,0,0,5"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					TextColor="#F0F2EF"
+					HorizontalOptions="CenterAndExpand"
+					WidthRequest="200"/>
+
+			<Button Text="FAQ"
+					FontAttributes="Bold"
+					FontSize="20"
+					Margin="0,0,0,5"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					TextColor="#F0F2EF"
+					HorizontalOptions="CenterAndExpand"
+					WidthRequest="200"/>
+
+			<Button Text="Logout"
+					FontAttributes="Bold"
+					FontSize="20"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					TextColor="#F0F2EF"
+					HorizontalOptions="CenterAndExpand"
+					WidthRequest="200"
+					Clicked="LogoutButton"/>
+
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

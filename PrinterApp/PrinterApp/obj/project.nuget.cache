@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "9YEFzXsmeujrI3ikNU8Mfq9UkMfs+ryySqZ0emdrZ6IuebyALRxhGtVA6wg5/1sk32CZu6NFJxiocIETzhRfQg==",
+  "success": true,
+  "projectFilePath": "/Users/grantlong/Projects/PrinterApp/PrinterApp/PrinterApp/PrinterApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/grantlong/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.4/sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
+    "/Users/grantlong/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

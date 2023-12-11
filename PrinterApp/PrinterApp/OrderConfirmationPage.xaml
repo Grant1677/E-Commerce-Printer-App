@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.OrderConfirmationPage"
+    Title="Order Confirmation"
+    NavigationPage.HasBackButton="False">
+
+    <ContentPage.Content>
+        <ScrollView>
+
+			<StackLayout>
+
+				<Frame	CornerRadius="25"
+						Margin="15"
+						Padding="0"
+						HorizontalOptions="CenterAndExpand"
+						VerticalOptions="Center"
+						IsClippedToBounds="True"
+						HeightRequest="285"
+						WidthRequest="285">
+
+					<Image
+						VerticalOptions="FillAndExpand"
+						HorizontalOptions="FillAndExpand"
+						Source="PrinterInnovationLogo.png"
+						Aspect="AspectFit">
+					</Image>
+
+				</Frame>
+
+				<Frame BackgroundColor="#F0F2EF"
+					   Margin="10,0,10,10"
+					   BorderColor="#30638E"
+					   HasShadow="True"
+					   CornerRadius="50"
+					   HeightRequest="110">
+
+					<StackLayout>
+
+						<Label	Text="Thanks for ordering!"
+								TextColor="Black"
+								HorizontalTextAlignment="Center"
+								HorizontalOptions="Center"
+								
+								FontAttributes="Bold"
+								FontSize="28"/>
+
+						<Label	Text="Your order will be shipped in 4-7 business days. A shipping number will be sent to your email to track your printer."
+								TextColor="Black"
+								HorizontalTextAlignment="Center"
+								HorizontalOptions="CenterAndExpand"
+								
+								FontSize="18"/>
+
+						<Grid Padding="7"
+							  RowDefinitions="Auto, *"
+							  ColumnDefinitions="Auto, *">
+
+							
+
+							
+
+							
+							
+						</Grid>
+
+					</StackLayout>
+
+				</Frame>
+
+				<Frame BackgroundColor="#F0F2EF"
+					   Margin="10,0,10,10"
+					   BorderColor="#30638E"
+					   HasShadow="True"
+					   CornerRadius="50"
+					   HeightRequest="200">
+
+					<StackLayout>
+
+						<Label Text="Options"
+							   TextColor="Black"
+							   HorizontalOptions="Center"
+							   TextTransform="Uppercase"
+							   FontAttributes="Bold"
+							   FontSize="30"
+							   Padding="5"/>
+
+						<Button	Text="Back to login"
+								FontAttributes="Bold"
+								FontSize="20"
+								CornerRadius="25"
+								BackgroundColor="#30638E"
+								TextColor="#F0F2EF"
+								HorizontalOptions="CenterAndExpand"
+								WidthRequest="230"
+								Margin="10,0,10,10"
+								Clicked="BackToLogin"/>
+
+						<Button	Text="Back to home screen"
+								FontAttributes="Bold"
+								FontSize="20"
+								CornerRadius="25"
+								BackgroundColor="#30638E"
+								TextColor="#F0F2EF"
+								HorizontalOptions="CenterAndExpand"
+								WidthRequest="230"
+								Margin="10,0,10,10"
+								Clicked="BackToHome"/>
+					
+					</StackLayout>
+
+				</Frame>
+
+			</StackLayout>
+
+		</ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>
+

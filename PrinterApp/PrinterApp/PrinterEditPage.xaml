@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrinterApp.PrinterEditPage"
+    Title="Edit Printer"
+	BackgroundColor="#F0F2EF">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+			<Entry x:Name="manNameEntry"
+					Margin="40,35,40,5"
+					Placeholder="Manufacturer Name"
+					IsReadOnly="True"/>
+
+            <Entry x:Name="modelNumEntry"
+					Margin="40,5,40,5"
+					Placeholder="Model Number"
+					IsReadOnly="True"/>
+
+            <Entry x:Name="quantityEntry"
+					Margin="40,5,40,5"
+					Placeholder="Quantity" />
+
+            <Entry x:Name="descriptionEntry"
+					Margin="40,5,40,5"
+					Placeholder="Description" />
+
+            <Entry x:Name="priceEntry"
+					Margin="40,5,40,5"
+					Placeholder="Price" />
+
+            <Entry x:Name="categoryEntry"
+					Margin="40,5,40,5"
+					Placeholder="Category" />
+
+            <Entry x:Name="typeEntry"
+					Margin="40,5,40,5"
+					Placeholder="Type" />
+
+			<Entry x:Name="isColorEntry"
+					Margin="40,5,40,5"
+					Placeholder="Is Color" />
+
+			<Button Text="Submit"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					Margin="10,5,10,10"
+					TextColor="#F0F2EF"
+					HorizontalOptions="Center"
+					WidthRequest="200"
+					Clicked="SubmitEdit"/>
+
+			<Button Text="Cancel"
+					FontAttributes="Bold"
+					CornerRadius="25"
+					BackgroundColor="#30638E"
+					Margin="10,5,10,10"
+					TextColor="#F0F2EF"
+					HorizontalOptions="Center"
+					WidthRequest="200"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
