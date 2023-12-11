@@ -15,15 +15,11 @@ This app has both a user mode and admin mode. The user mode allows a user to loo
 
 ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/dd173518-dce3-4f1b-be03-957c4f05d18c)
 
-[Back To The Top](#PrinterApp)
-
 ---
 
 ## Technologies
 
 - C# XAML within Visual Studio 
-
-[Back To The Top](#PrinterApp)
 
 ---
 
@@ -35,8 +31,6 @@ User View:
 
 ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/df2aeaab-3dbc-4e68-ad3a-713de8c1457d) ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/f2f0c1f7-6adc-4445-bfd5-1807134fe220) ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/6f8d3bea-4e12-4dfd-95e3-32569a007c8c)
 
-
-
 Admin View:
 
 ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/74d6cc5c-3d53-4574-a281-de90b11f7439) ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/c3081772-e3fc-4729-8580-049401d49d56) 
@@ -44,15 +38,12 @@ Admin View:
 
 ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/666641e3-c5e9-4dbe-a28f-0daff1e870e5) ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/900ca4e3-6a38-45de-b1a8-402980c04941)
 
-[Back To The Top](#PrinterApp)
 
 ---
 
 ## License
 
 This project is not licensed.
-
-[Back To The Top](#PrinterApp)
 
 ---
 
@@ -61,7 +52,6 @@ This project is not licensed.
 - Email - elginowls2020@gmail.com
 - Linkedin - [Grant Long](https://www.linkedin.com/in/grant-long-b9b966191/)
 
-[Back To The Top](#PrinterApp)
 
 
 
