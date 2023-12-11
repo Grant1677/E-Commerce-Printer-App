@@ -1,10 +1,33 @@
 # E-commerce Printer App
 
+### Table of Contents
+
+- [Description](#description)
+- [Technologies](#technologies)
+- [License](#license)
+- [Author Info](#author-info)
+
+---
+
+## Description
+
 This app has both a user mode and admin mode. The user mode allows a user to look through different categories of printer and buy them. The admin mode allows a admin to view printers, users, and past orders. 
 
 ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/dd173518-dce3-4f1b-be03-957c4f05d18c)
 
-# Images:
+[Back To The Top](#PrinterApp)
+
+---
+
+## Technologies
+
+- C# XAML within Visual Studio 
+
+[Back To The Top](#PrinterApp)
+
+---
+
+## Images:
 
 User View:
 
@@ -20,6 +43,27 @@ Admin View:
 ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/680926a2-37c0-4623-a167-68c62a83e7f4)
 
 ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/666641e3-c5e9-4dbe-a28f-0daff1e870e5) ![image](https://github.com/Grant1677/PrinterApp/assets/94025574/900ca4e3-6a38-45de-b1a8-402980c04941)
+
+[Back To The Top](#PrinterApp)
+
+---
+
+## License
+
+This project is not licensed.
+
+[Back To The Top](#PrinterApp)
+
+---
+
+## Author Info
+
+- Email - elginowls2020@gmail.com
+- Linkedin - [Grant Long](https://www.linkedin.com/in/grant-long-b9b966191/)
+
+[Back To The Top](#PrinterApp)
+
+
 
 
 
